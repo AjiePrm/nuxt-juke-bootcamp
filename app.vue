@@ -5,7 +5,9 @@
 <template>
    <!-- header part -->
    <div class="content">
-    <Header></Header>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
     <Hero></Hero>
     <Card1></Card1> 
     <HowTo></HowTo>

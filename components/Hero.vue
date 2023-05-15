@@ -12,11 +12,8 @@
                 <a class="inline-block leading-6 border-b-4 border-yellow-300 border-dotted cursor-pointer">See the methode !</a> The classic burger is an all time BBQ favourite! This super easy homemade beef burger recipe gives you delicious patties, packed with onions and herbs for extra flavour, that are perfect for topping with cheese, lettuce and tomato, and sandwiching between floury buns.
               </div>      
                 <div class="flex justify-center mt-8">
-                  <MainButton name="button">
-                    <button class=" fancy-btn inline-flex text-white bg-primary-500 border-0 py-2 px-6 focus:outline-none bg-red-400 hover:bg-red-600 rounded text-lg">
-                        Learn more
-                    </button>
-                  </MainButton>
+                  <nuxt-layout name="main-button">
+                  </nuxt-layout>
                 </div>
               </div>
               <!-- RIGHT -->
@@ -27,6 +24,5 @@
           </section>
 </template>
 
-<script>
-
+<script setup>
 </script>
