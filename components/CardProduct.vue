@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto px-8 shadow-lg border my-5">
+    <div class="container mx-auto px-8 shadow-lg border lg:my-5 sm:my-10 sm:w-8/12 ">
                     <div class="pricing-plans lg:flex lg:-mx-6 lg:px-3 mt-6 md:mt-12">
                         <div class="lg:w-5/12 px-4 py-12 object-center m-auto sm:w-11/12">
                             <slot/>
