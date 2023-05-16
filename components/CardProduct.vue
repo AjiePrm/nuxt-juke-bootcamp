@@ -1,10 +1,10 @@
 <template>
-    <div class="container mx-auto px-4 shadow-lg border">
-                    <div class="pricing-plans lg:flex lg:-mx-4 mt-6 md:mt-12">
-                        <div class="w-8/12 px-4 py-12 object-center m-auto">
+    <div class="container mx-auto px-8 shadow-lg border my-5">
+                    <div class="pricing-plans lg:flex lg:-mx-6 lg:px-3 mt-6 md:mt-12">
+                        <div class="lg:w-5/12 px-4 py-12 object-center m-auto sm:w-11/12">
                             <slot/>
                         </div>
-                      <div class="lg:w-11/12 my-4 md:my-6">
+                      <div class="lg:w-11/12 my-4 md:my-6 sm:w-11/12">
                         <div class="border-t-4 border-solid border-white bg-white max-w-sm mx-auto hover:border-red-400 transition-colors duration-300">
                           <div class=" md:py-8">
                             <h4 class="font-medium leading-tight text-2xl mb-2">{{ title }}</h4>
