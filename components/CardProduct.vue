@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto px-4 shadow-lg border">
                     <div class="pricing-plans lg:flex lg:-mx-4 mt-6 md:mt-12">
-                        <div class="w-4/12 px-4 py-12 object-center flex relative sm:w-1/2 sm:max-w-3xl">
+                        <div class="w-8/12 px-4 py-12 object-center m-auto">
                             <slot/>
                         </div>
                       <div class="lg:w-11/12 my-4 md:my-6">
@@ -10,7 +10,7 @@
                             <h4 class="font-medium leading-tight text-2xl mb-2">{{ title }}</h4>
                           </div> 
                           <div class="">
-                            <h6 class="leading-tight text-xl">{{ description }}</h6>
+                            <h6 class="leading-tight text-xl py-1">{{ description }}</h6>
                           </div>                               
                           <div class="pricing-amount bg-indigo-100 p-6 transition-colors duration-300">
                             <div class="text-4xl font-semibold"><span class="text-4xl font-semibold">$</span> {{ price }}</div>

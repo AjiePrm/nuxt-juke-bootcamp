@@ -6,7 +6,7 @@
       <NuxtPage />
     </NuxtLayout>
     <CardProduct :title = "'Fancy Sweater'" :description = "'This in a cute thing right ?'" :price="10" >
-      <img class="object-cover object-center rounded md:place-content-center" alt="image" src="~/assets/baju.webp" />
+      <img class="object-cover object-center rounded md:object-center" alt="image" src="~/assets/baju.webp" />
     </CardProduct>
     <CardProduct :title = "'Gray women blouse top'" :description = "'Mostcrepe ingredients LD 100 Length 68/70 The material is not hot and falls (polyester)'" :price="7" >
       <img class="object-cover object-center rounded md:place-content-center" alt="image" src="~/assets/atasas.webp" />
