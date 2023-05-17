@@ -1,5 +1,10 @@
 <template>
-    <div>
-        
-    </div>
+    <!-- header part -->
+
 </template>
+
+<script setup>
+const route = useRoute()
+
+
+</script>

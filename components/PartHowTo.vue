@@ -1,4 +1,5 @@
 <template>
+
     <div class="max-w-lg rounded overflow-hidden shadow-lg mx-auto my-8">
             <img class="w-full" src="https://www.wikihow.com/images/thumb/1/1f/Make-a-Hamburger-Step-7-Version-6.jpg/550px-nowatermark-Make-a-Hamburger-Step-7-Version-6.jpg.webp" alt="step1">
             <div class="px-6 py-4">

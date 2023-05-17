@@ -15,23 +15,23 @@
                  <div class="lg:flex flex-grow items-center" id="example-navbar-warning">
                    <ul class="flex flex-col lg:flex-row list-none mr-auto">
                      <li class="nav-item">
-                       <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#Ajie">
+                       <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75">
                          <i class="fab fa-facebook-square text-lg leading-lg text-white opacity-75" /> 
                        </a>
                      </li>
                      <li class="nav-item">
-                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75" href="#Ajie">
-                         <i class="fab fa-twitter text-lg leading-lg text-white opacity-75" /> <span class="ml-2">Home</span>
+                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75">
+                         <i class="fab fa-twitter text-lg leading-lg text-white opacity-75" /> <span class="ml-2"><NuxtLink to="/app">Home</NuxtLink></span>
                        </a>
                      </li>
                      <li class="nav-item">
-                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75" href="#Ajie">
-                         <span class="ml-2">ingredients</span>
+                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75">
+                         <span class="ml-2"><NuxtLink to="/ingredients">ingredients</NuxtLink></span>
                        </a>
                      </li>
                      <li class="nav-item">
-                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75" href="#Ajie">
-                         <span class="ml-2">How to</span>
+                       <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75">
+                         <span class="ml-2"><NuxtLink to="/HowTo">How to</NuxtLink></span>
                        </a>
                      </li>
                    </ul>
