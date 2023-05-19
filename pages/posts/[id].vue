@@ -1,8 +1,8 @@
 <template>
     <div>
         <div>
-                <main class="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
-            <h1 class="text-9xl font-extrabold text-white tracking-widest">Poduct {{ id }}</h1>
+                <main class="h-screen w-full flex flex-col justify-center items-center bg-[rgb(26,34,56)]">
+            <h1 class="lg:text-9xl font-extrabold text-white tracking-widest sm:text-8xl ">Poduct {{ id }}</h1>
             <div class="bg-[#FF6A3D] px-2 text-sm rounded rotate-12 absolute">
                 Page Not Found
             </div>

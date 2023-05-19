@@ -17,11 +17,15 @@
                           </div>
                           <div class="p-6 flex flex-row space-x-5">
                             <div class="mt-6 py-4">
-                              <button class="bg-red-400 text-xl text-white py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300"><NuxtLink to="/404">Buy</NuxtLink></button>
+                              <NuxtLink to="/404">
+                              <button class="bg-red-400 text-xl text-white py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300">Buy</button>
+                              </NuxtLink>
                             </div>
-                            <div class="mt-6 py-4">
-                              <button class="border shadow-lg text-xl text-black py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300"><NuxtLink to="/404">Add to chart</NuxtLink></button>
-                            </div>
+                            <NuxtLink to="/404">
+                              <div class="mt-6 py-4">
+                                <button class="border shadow-lg text-xl text-black py-2 px-6 rounded hover:bg-red-700 transition-colors duration-300">Add to chart</button>
+                              </div>
+                            </NuxtLink>
                           </div>
                         </div>
              </div>               
