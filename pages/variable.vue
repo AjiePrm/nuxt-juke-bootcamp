@@ -1,10 +1,10 @@
 <template>
-  <div class="xl:w-6/12 m-auto lg:w-9/12">
-    <div class="container mx-auto my-9 rounded-lg shadow-md">
-      <div class="flex">
-        <div class="w-2/5">
+  <div class="container xl:w-6/12 m-auto lg:w-9/12">
+    <div v-for="product in products" :key="product.id" class="container mx-auto my-9 rounded-lg shadow-md py-6">
+      <div class="flex py-8">
+        <div class="w-2/6">
           <img
-            src="http://bit.ly/2tMBBTd"
+            :src="product.image"
             class="h-420 w-327 rounded-l-lg"
             alt="Harvest Vase"
           />
@@ -12,24 +12,20 @@
 
         <div class="w-3/5 bg-white rounded-r-lg">
           <div class="p-8">
-            <h1 class="text-4xl font-serif"></h1>
+            <h1 class="text-4xl font-serif">{{ product.title }}</h1>
             <h2
               class="mt-4 text-xs font-semibold uppercase text-gray-600 tracking-wider"
             >
-              by studio and friends
+              {{ product.category }}
             </h2>
             <p class="mt-6 text-base font-serif text-gray-700 leading-relaxed">
-              Harvest Vases are a reinterpretation<br />
-              of peeled fruits and vegetables as<br />
-              functional objects. The surfaces<br />
-              appear to be sliced and pulled aside,<br />
-              allowing room for growth.
+              {{product.description}}
             </p>
           </div>
 
           <div class="flex items-center justify-between px-5 py-4 mt-4">
             <p class="inline-block font-serif text-xl font-light text-gray-700">
-              <span class="font-serif text-2xl">$78</span>
+              <span class="font-serif text-2xl">${{ product.price }}</span>
             </p>
 
             <div class="container m-0 flex justify-center px-5">
@@ -77,10 +73,35 @@ export default {
   data() {
     return {
       count: 0,
+      productTitle: null,
+      productCategory: null,
+      productDescription: null,
+      productPrice: null,
+      productImage: null,
+      products:[],
     };
+  },
+async fetch(){
+  const response = await fetch('');
+  this.products = await response.json();
+},
+  mounted() {
+
+   this.products = dataProduct.products
+
+    if (dataProduct.products && dataProduct.products.length > 0) {
+      this.productTitle = dataProduct.products[0].title;
+      this.productCategory = dataProduct.products[0].category;
+      this.productDescription = dataProduct.products[0].description;
+      this.productImage = dataProduct.products[0].image
+      this.productPrice = dataProduct.products[0].price
+    }
   },
 };
  
+
+
+// tugas variable
 let angka = 0;
 console.log(`angka: ${angka} `)
 let kalimat ="kasur"
@@ -120,5 +141,5 @@ const item = dataProduct.products
 console.log(dataProduct.products);
 
 //unsolve
-console.log(dataProduct.products[0].title);
+//console.log(dataProduct.products[0].title);
 </script>
