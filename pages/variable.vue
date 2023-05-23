@@ -2,7 +2,7 @@
   <div class="container xl:w-6/12 m-auto lg:w-9/12">
     <div v-for="product in products" :key="product.id" class="container mx-auto my-9 rounded-lg shadow-md py-6">
       <div class="flex py-8">
-        <div class="w-2/6">
+        <div class="w-2/12 object- overflow-hidden">
           <img
             :src="product.image"
             class="h-420 w-327 rounded-l-lg"
@@ -18,7 +18,7 @@
             >
               {{ product.category }}
             </h2>
-            <p class="mt-6 text-base font-serif text-gray-700 leading-relaxed">
+            <p class="overflow-scroll overflow-x-hidden h-20 mt-6 text-base font-serif text-gray-700 leading-relaxed">
               {{product.description}}
             </p>
           </div>
