@@ -1,18 +1,18 @@
 <template>
   <div class="container xl:w-6/12 m-auto lg:w-9/12">
     <div v-for="product in products" :key="product.id" class="container mx-auto my-9 rounded-lg shadow-md py-6">
-      <div class="flex py-8">
-        <div class="w-2/12 object- overflow-hidden">
+      <div class="lg:flex py-8 md:flex-none text-center">
+        <div class="lg:w-2/3 object- overflow-hidden md:w-5/12 content-center sm:w-8/12  ">
           <img
             :src="product.image"
-            class="h-420 w-327 rounded-l-lg"
+            class="w-7/12 rounded-l-lg mx-auto"
             alt="Harvest Vase"
           />
         </div>
 
-        <div class="w-3/5 bg-white rounded-r-lg">
-          <div class="p-8">
-            <h1 class="text-4xl font-serif">{{ product.title }}</h1>
+        <div class="w-3/5 bg-white rounded-r-lg m-0 mx-auto">
+          <div class="lg:p-8 md:p-2 pt-8 t">
+            <h1 class="lg:text-4xl font-serif md:text-lg text-center sm:text-sm ">{{ product.title }}</h1>
             <h2
               class="mt-4 text-xs font-semibold uppercase text-gray-600 tracking-wider"
             >
@@ -27,8 +27,13 @@
             <p class="inline-block font-serif text-xl font-light text-gray-700">
               <span class="font-serif text-2xl">${{ product.price }}</span>
             </p>
-
-            <div class="container m-0 flex justify-center px-5">
+            <button
+              class="inline-block px-6 py-2 font-semibold text-xs uppercase tracking-tight text-white bg-red-400 rounded-full hover:bg-red-500"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div class="container m-0 flex justify-center px-5">
               <button
                 @click="count--"
                 type="submit"
@@ -49,13 +54,6 @@
                 +
               </button>
             </div>
-
-            <button
-              class="inline-block px-10 py-2 font-semibold text-xs uppercase tracking-tight text-white bg-red-400 rounded-full hover:bg-red-500"
-            >
-              Buy Now
-            </button>
-          </div>
         </div>
       </div>
     </div>
