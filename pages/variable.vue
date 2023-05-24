@@ -71,11 +71,11 @@ export default {
   data() {
     return {
       count: 0,
-      productTitle: null,
-      productCategory: null,
-      productDescription: null,
-      productPrice: null,
-      productImage: null,
+     // productTitle: null,
+     // productCategory: null,
+     // productDescription: null,
+     // productPrice: null,
+     // productImage: null,
       products:[],
     };
   },
@@ -87,13 +87,13 @@ async fetch(){
 
    this.products = dataProduct.products
 
-    if (dataProduct.products && dataProduct.products.length > 0) {
-      this.productTitle = dataProduct.products[0].title;
-      this.productCategory = dataProduct.products[0].category;
-      this.productDescription = dataProduct.products[0].description;
-      this.productImage = dataProduct.products[0].image
-      this.productPrice = dataProduct.products[0].price
-    }
+  //  if (dataProduct.products && dataProduct.products.length > 0) {
+   //   this.productTitle = dataProduct.products[0].title;
+   //   this.productCategory = dataProduct.products[0].category;
+   //   this.productDescription = dataProduct.products[0].description;
+   //   this.productImage = dataProduct.products[0].image
+   //   this.productPrice = dataProduct.products[0].price
+   // }
   },
 };
  
